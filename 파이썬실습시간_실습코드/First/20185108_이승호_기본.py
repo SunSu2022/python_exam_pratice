@@ -1,0 +1,5 @@
+gender = float(input("여성이면 1, 남성이면 0을 입력하세요: "))
+height = float(input("당신의 키는 얼마입니까? "))
+waist = float(input("당신의 허리둘레는 얼마입니까? "))
+RFM = float(64-(  20*( height / waist ) + 12 *gender ))
+print("당신의 RFM은  " + str(RFM))
